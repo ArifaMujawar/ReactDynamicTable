@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+table, th, td {
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+th {
+    text-align: left;
+}
+table {
+    border-spacing: 5px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 50px;
+}
+/*tr:nth-child(even) {
+    background-color: #dddddd;
+}*/
+
+input{
+  border:white;
+}
