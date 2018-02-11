@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import './index.css';
+import './index.css';
 //import {App} from './App';
 import {TextInput} from './TextInput';
 import {TextField} from './TextField';
@@ -9,7 +9,10 @@ class Form extends React.Component{
   constructor(props){
     super(props);
     this.state ={ userIsEditing: false,
-      favouriteFlavor:'Arifa'
+      name:'Arifa',
+      email:'arifa@gmail.com',
+      age:'26',
+      gender:'female'
     };
     this.toggleEditing=this.toggleEditing.bind(this);
     this.saveInput=this.saveInput.bind(this);
@@ -22,10 +25,17 @@ class Form extends React.Component{
     });
 
   }
+  addUser(){
 
-  saveInput(input) {
+  }
+
+
+  saveInput(input,einput,age,gender) {
     this.setState({
-      favouriteFlavor: input
+      name: input,
+      email:einput,
+      age:age,
+      gender:gender
     });
   }
 
@@ -46,11 +56,19 @@ class Form extends React.Component{
         return (
           <div>
             <TextField
-              label={ 'Favorite flavor' }
-              text={ this.state.favouriteFlavor }
+              label={ 'List of participants' }
+              text={ this.state.name }
+              email={ this.state.email}
+              age={ this.state.age}
+              gender={this.state.gender}
             />
             <button onClick={ this.toggleEditing }>Edit</button>
+            <div>
+            <button onCLick={this.addUser}>Add New User</button>
+            <button onClick={this.deleteUser}>Delete User</button>
+            </div>
           </div>
+
 
         )
       }
