@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
+import {Data} from './DataFile.js'
+export class App extends Component {
+  constructor(props){
+    super(props);
+    this.handleChange=this.handleChange.bind(this);
+    }
+    handleChange(e){
+      const name = e.target.value;
+      this.props.onClick(name);
+    }
 
-class App extends Component {
-  edit_row(){
-    //onfocus="this.value=''"
-  }
-  delete_row(){
-
-  }
-  add_row(){
-
-  }
   render() {
-    return (<form id="my_form" method="get" action="/">
+
+    return (<form className="my_form" method="get" action="/">
     <table>
+      
     <tr>
       <th>Name</th>
       <th>Email</th>
@@ -21,11 +23,11 @@ class App extends Component {
     </tr>
 
       <tr>
-        <td><input type="text" name="title" value="Ms."  /></td>
+        <td><input type="text" name="title" value="Ms." onClick={this.handleChange}/></td>
         <td><input type="text" name="email" value="abc@gmail.com" /></td>
         <td><input type="text" name="age" value="21" /></td>
         <td><input type="text" name="gender" value="Female" /></td>
-        <td><input type="submit" value="Submit" /></td>
+        <td><button type="submit" onClick={this.handleInput}>Save</button></td>
         <td><input type="edit" value="Edit" /></td>
       </tr>
 
