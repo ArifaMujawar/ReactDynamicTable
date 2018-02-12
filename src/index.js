@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import {App} from './App';
+import {App} from './App';
 import {TextInput} from './TextInput';
 import {TextField} from './TextField';
 
@@ -30,6 +30,7 @@ class Form extends React.Component{
   }
 
 
+
   saveInput(input,einput,phone) {
     this.setState({
       name: input,
@@ -46,7 +47,7 @@ class Form extends React.Component{
             return (
               <div>
                 <TextInput
-                  label={ 'Favorite flavor' }
+                  label={ 'List of participants' }
                   saveInput={ this.saveInput }
                  />
                 <button onClick={ this.toggleEditing }>Done</button>
@@ -55,21 +56,24 @@ class Form extends React.Component{
         }else{
         return (
           <div>
+          <div>
+          <App />
+          
+
+          </div>
             <TextField
               label={ 'List of participants' }
               text={ this.state.name }
               email={ this.state.email}
               phone={ this.state.phone}
+
             />
             <button onClick={ this.toggleEditing }>Edit</button>
-            <div>
-            <button onCLick={this.addUser}>Add New User</button>
-            <button onClick={this.deleteUser}>Delete User</button>
-            </div>
+
           </div>
 
 
-        )
+        );
       }
     }
     }

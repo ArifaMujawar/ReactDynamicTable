@@ -3,12 +3,13 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-table, th, td, p {
+table, th, td {
     border: 1px solid #dddddd;
     border-collapse: collapse;
 }
-th, td, p {
+th, td {
     padding: 10px;
+
 }
 th {
     text-align: left;
