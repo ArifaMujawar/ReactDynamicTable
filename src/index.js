@@ -11,8 +11,8 @@ class Form extends React.Component{
     this.state ={ userIsEditing: false,
       name:'Arifa',
       email:'arifa@gmail.com',
-      age:'26',
-      gender:'female'
+      phone:'26'
+
     };
     this.toggleEditing=this.toggleEditing.bind(this);
     this.saveInput=this.saveInput.bind(this);
@@ -30,12 +30,12 @@ class Form extends React.Component{
   }
 
 
-  saveInput(input,einput,age,gender) {
+  saveInput(input,einput,phone) {
     this.setState({
       name: input,
       email:einput,
-      age:age,
-      gender:gender
+      phone:phone
+
     });
   }
 
@@ -59,8 +59,7 @@ class Form extends React.Component{
               label={ 'List of participants' }
               text={ this.state.name }
               email={ this.state.email}
-              age={ this.state.age}
-              gender={this.state.gender}
+              phone={ this.state.phone}
             />
             <button onClick={ this.toggleEditing }>Edit</button>
             <div>

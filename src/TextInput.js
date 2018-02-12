@@ -8,15 +8,13 @@ export class TextInput extends React.Component{
     this.handleInput= this.handleInput.bind(this);
   }
   handleInput() {
-    var input = ReactDOM.findDOMNode(this.refs.userInput);
+    var name = ReactDOM.findDOMNode(this.refs.userName);
     var email = ReactDOM.findDOMNode(this.refs.userEmail);
-    var age =  ReactDOM.findDOMNode(this.refs.age);
-    var gender = ReactDOM.findDOMNode(this.refs.gender);
-    this.props.saveInput(input.value,email.value,age.value,gender.value);
-    input.value = '';
+    var phone =  ReactDOM.findDOMNode(this.refs.userPhone);
+    this.props.saveInput(name.value,email.value,phone.value);
+    name.value = '';
     email.value= '';
-    age.value= '';
-    gender.value = '';
+    phone.value= '';
   }
   render() {
     var label = this.props.label
@@ -27,7 +25,7 @@ export class TextInput extends React.Component{
           type="text"
           className="form-control"
           id="input-{ label }"
-          ref="userInput"
+          ref="userName"
          />
          <input
            type="email"
@@ -39,14 +37,9 @@ export class TextInput extends React.Component{
             type="number"
             className="form-control"
             id="input-{ label }"
-            ref="age"
+            ref="userPhone"
            />
-           <input
-             type="text"
-             className="form-control"
-             id="input-{ label }"
-             ref="gender"
-            />
+
         <button onClick={ this.handleInput }>Save</button>
       </div>
     )
