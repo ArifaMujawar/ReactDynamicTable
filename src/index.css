@@ -1,25 +1,81 @@
+#root{
+  text-align: center;
+
+}
+.logo{
+  background-image: url("nord_icon.jpg");
+  width:32px;
+  height:32px;
+}
+
+#myHeader{
+  color:white;
+  background-color:	#AEB5BF;
+  height:96px;
+  width:912px;
+  padding-left: 32px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align:center;
+  margin:auto;
+
+}
+#companyName{
+  text-align:left;
+  margin-top: 30px;
+}
+img{
+  padding-left: 32px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+h2{
+  margin-top:32px;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #f2f2f2;
+  text-align:center;
 }
 table, th, td {
-    border: 1px solid #dddddd;
+    border-bottom:  1px solid #dddddd;
     border-collapse: collapse;
 }
-th, td {
-    padding: 10px;
-
+tr th{
+  line-height: 48px;
+}
+tr td{
+  line-height:72px;
 }
 th {
     text-align: left;
+    color:#757575;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    padding-left: 24px;
+    font-weight:600;
+
 }
-table {
+td{
+  text-align: left;
+  padding-left: 24px;
+  color: #505050;
+  font-size:16px;
+  line-height:24px;
+  font-weight: 400;
+}
+.MainTable {
     border-spacing: 3px;
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
-    margin: 20px;
+
+    width:912px;
+    background-color: white;
+    margin-left:auto ;
+    margin-right:auto;
 }
 /*tr:nth-child(even) {
     background-color: #dddddd;
@@ -28,3 +84,63 @@ table {
 p{
   border:white;
 }
+
+.icon-button {
+   color :   #909090;
+   height:  24;
+   width: 24;
+   appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: 0;
+    background: transparent
+}
+ .glyphicon glyphicon-pencil{
+   fill :   #909090;
+   height:  24;
+   width: 24;
+   appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: 0;
+    background: transparent
+}
+.form-inline{
+  background-color: white;
+  width: 912px;
+  text-align:  center;
+  margin:auto;
+  padding :auto;
+  width:912px;
+}
+
+ .addUser{
+  background-color:#EDEDED;
+  height:40px;
+  box-shadow: none;
+  border:none;
+  padding-right:16px;
+  margin:16px;
+  }
+#fname, #email, #phone{
+  height:40px;
+  border: 1px solid #e6e6e6;
+  padding:16px ;
+  margin: 16px;
+  background-color: #f2f2f2;
+}
+#mylabel{
+text-align: center;
+margin:auto;
+padding :auto;
+width:912px;
+}
+#label{
+  color:#666666;
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  }

@@ -1,5 +1,7 @@
 import React from 'react';
 import {PersonRow} from './DisplayRows';
+import {App} from './App';
+import './index.css';
 
 export class TextField extends React.Component{
   constructor(props){
@@ -119,7 +121,16 @@ export class TextField extends React.Component{
 
           });
     return (
-    <table >
+
+        <div >
+        <div className="header" id="myHeader">
+      <div id="companyName"><h2><img  className="logo" ></img>Nord Software</h2></div>
+      </div>
+
+        <div id="mylabel"> <h2 id="label"> List of participants</h2></div>
+      <App data={this.state.data} />
+
+        <table className="MainTable">
     <thead>
       <tr>
            <th>Name</th>
@@ -132,6 +143,10 @@ export class TextField extends React.Component{
 
       </tbody>
       < /table>
+
+</div>
+
+
       );
   }
 

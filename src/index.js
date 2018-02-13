@@ -25,9 +25,6 @@ class Form extends React.Component{
     });
 
   }
-  addUser(){
-
-  }
 
 
 
@@ -56,18 +53,10 @@ class Form extends React.Component{
         }else{
         return (
           <div>
+
           <div>
-          <App />
-          
-
-          </div>
-            <TextField
-              label={ 'List of participants' }
-              text={ this.state.name }
-              email={ this.state.email}
-              phone={ this.state.phone}
-
-            />
+              <TextField />
+            </div>
             <button onClick={ this.toggleEditing }>Edit</button>
 
           </div>
