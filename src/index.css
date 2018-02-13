@@ -22,16 +22,18 @@
 }
 #companyName{
   text-align:left;
-  margin-top: 30px;
 }
-img{
-  padding-left: 32px;
+ img span{
+
   margin-right: 10px;
   margin-top: 20px;
+  display: inline;
+
 }
-h2{
-  margin-top:32px;
+span{
+  padding: 12px;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -41,8 +43,8 @@ body {
 }
 table, th, td {
     border-bottom:  1px solid #dddddd;
-    border-collapse: collapse;
 }
+
 tr th{
   line-height: 48px;
 }
@@ -70,8 +72,6 @@ td{
 .MainTable {
     border-spacing: 3px;
     font-family: arial, sans-serif;
-    border-collapse: collapse;
-
     width:912px;
     background-color: white;
     margin-left:auto ;
@@ -114,6 +114,11 @@ p{
   margin:auto;
   padding :auto;
   width:912px;
+ margin-bottom: 10px;
+}
+#upperForm{
+border-bottom:  1px solid #dddddd;
+  width: 912px;
 }
 
  .addUser{
@@ -121,16 +126,34 @@ p{
   height:40px;
   box-shadow: none;
   border:none;
-  padding-right:16px;
+  padding-right:20px;
   margin:16px;
+  text-align: center;
+  float:right;
   }
 #fname, #email, #phone{
   height:40px;
   border: 1px solid #e6e6e6;
-  padding:16px ;
-  margin: 16px;
+  padding:15px ;
+  margin: 15px;
   background-color: #f2f2f2;
 }
+#fname{
+  float:left;
+  margin-right: 0px;
+}
+#email{
+  margin-left: -100px;
+ padding-left: 20px;
+ padding-right: 20px;
+ width: 230px;
+}
+ #phone{
+   padding-left: 10px;
+   padding-right: 10px;
+   width:150px;
+ }
+
 #mylabel{
 text-align: center;
 margin:auto;

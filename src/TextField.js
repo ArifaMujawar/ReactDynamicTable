@@ -12,92 +12,92 @@ export class TextField extends React.Component{
       data : [{
         id: 1,
         name: "Simon Bailey",
-        email:"arifa@gmail.com",
+        email:"simon@gmail.com",
         phone: "22"
      }, {
         id: 2,
         name: "Thomas Burleson",
-        email:"xxx@gmail.com",
+        email:"thomas@gmail.com",
         phone: "32"
    }, {
      id: 3,
      name: "Will Button",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"wil@gmail.com",
+     phone: "28"
    }, {
      id: 4,
      name: "Ben Clinkinbeard",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"ben@gmail.com",
+     phone: "25"
    }, {
      id: 5,
      name: "Kent Dodds",
-     email:"arifa@gmail.com",
+     email:"kent@gmail.com",
      phone: "22"
    }, {
      id: 6,
      name: "Trevor Ewen",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"trevor@gmail.com",
+     phone: "29"
    }, {
      id: 7,
      name: "Aaron Frost",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"aron@gmail.com",
+     phone: "21"
    }, {
      id: 8,
      name: "Joel Hooks",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"joel@gmail.com",
+     phone: "25"
    }, {
      id: 9,
      name: "Jafar Husain",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"jafar@gmail.com",
+     phone: "20"
    }, {
      id: 10,
      name: "Tim Kindberg",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"tim@gmail.com",
+     phone: "27"
    }, {
      id: 11,
      name: "John Lindquist",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"john@gmail.com",
+     phone: "25"
    }, {
      id: 12,
      name: "Joe Maddalone",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"joe@gmail.com",
+     phone: "26"
    }, {
      id: 13,
      name: "Tyler McGinnis",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"tyler@gmail.com",
+     phone: "29"
    }, {
      id: 14,
      name: "Scott Moss",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"scott@gmail.com",
+     phone: "28"
    }, {
      id: 15,
      name: "Robert Penner",
-     email:"arifa@gmail.com",
+     email:"robert@gmail.com",
      phone: "22"
    }, {
      id: 16,
      name: "Keith Peters",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"keith@gmail.com",
+     phone: "28"
    }, {
      id: 17,
      name: "Lukas Ruebbelke",
-     email:"arifa@gmail.com",
-     phone: "22"
+     email:"lukas@gmail.com",
+     phone: "23"
    }, {
      id: 18,
      name: "Brett Shollenberger",
-     email:"arifa@gmail.com",
+     email:"brett@gmail.com",
      phone: "22"
    }]
     }
@@ -124,7 +124,7 @@ export class TextField extends React.Component{
 
         <div >
         <div className="header" id="myHeader">
-      <div id="companyName"><h2><img  className="logo" ></img>Nord Software</h2></div>
+      <div id="companyName"><img className="logo" ></img><span>Nord Software</span></div>
       </div>
 
         <div id="mylabel"> <h2 id="label"> List of participants</h2></div>
@@ -136,6 +136,7 @@ export class TextField extends React.Component{
            <th>Name</th>
            <th>E-mail address</th>
            <th>Phone Number</th>
+           <th></th><th></th>
       </tr>
     </thead>
     <tbody>

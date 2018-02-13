@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import {TextField} from './TextField';
 import './index.css';
 
@@ -25,10 +24,14 @@ export class App extends React.Component {
         phone:phone
       }
       console.log("entry:"+entry);
-        console.log("Data:"+this.state.Data);
+      console.log(user+" "+email);
       if(typeof user === 'string' && user.length>0){
         this.props.data.push(entry);
-        this.setState({data:this.props.Data});
+        this.setState({data:this.state.Data});
+      }
+      else{
+        alert("Please enter the correct format");
+        console.log("not adding");
       }
 
     }
@@ -37,11 +40,12 @@ export class App extends React.Component {
     return(
       <div>
       <form className="form-inline" ref="add">
-      <table>
+      <table id="upperForm">
       <input id ="fname" type="text" placeholder="Full name"  ref="fname"/>
       <input id ="email" type="email" placeholder="E-mail address" ref="email"/>
       <input id ="phone" type="tel" placeholder="Phone number" ref="phone"/>
-      <button className="addUser" ref="addBtn" onClick={(event)=>{this.addUser(event)}}>Add New User</button>
+      <button className="addUser" ref="addBtn" onClick={(event)=>{this.addUser(event)}}>Add New</button>
+
       </table>
       </form>
 
