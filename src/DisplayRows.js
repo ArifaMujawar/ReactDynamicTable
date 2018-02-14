@@ -10,16 +10,12 @@ export const PersonRow = (props) => {
       <td> {props.phone}</td>
       <td> <button className="icon-button"  onClick={(event) => {
         event.stopPropagation();
-
-      }}><span className="glyphicon glyphicon-pencil"></span></button> </td>
+        props.onEditEvent(props.index)}}><span className="glyphicon glyphicon-pencil"></span></button> </td>
       <td><button className="icon-button" onClick={(evt) =>{
                 evt.stopPropagation();
                 props.onDelEvent(props.index)}} >
                 <span className="glyphicon glyphicon-trash"></span></button>
       </td></tr>
-
-
-
 
   );
 }
